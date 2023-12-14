@@ -2,23 +2,16 @@
   font-family: porsche;
   src: url(fonts/porsche.ttf);
 }
-ul {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  gap: 1em;
-}
 
-.logo {
-  width: 10%;
-  position: absolute;
-  top: 8px;
-  left: 16px;
-}
+/* HEADER CSS */
 
 h1 {
   text-align: center;
   font-family: "porsche";
+}
+
+nav {
+  width: 50vw;
 }
 
 nav a {
@@ -27,16 +20,37 @@ nav a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.porschefoot {
-  font-family: porsche;
+ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 1em;
+  margin-left: -3.4em;
 }
 
-footer {
-  text-align: center;
-  padding: 3px;
-  background-color: rgb(145, 144, 144);
-  color: rgb(0, 0, 0);
+ul a {
+  transition: all 500ms ease;
 }
+
+ul a:hover {
+  transform: translateY(-0.5em);
+  color: grey;
+  font-size: x-large;
+}
+
+.header1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding-right: 15em;
+}
+
+.logo {
+  width: 15em;
+}
+
+/* INDEX PAGINA CSS */
 
 .starth2 a {
   text-decoration: none;
@@ -44,33 +58,12 @@ footer {
   font-family: "porsche", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.text {
-  font-size: xx-large;
-  font-style: italic;
-}
-
-.start {
-  width: 30%;
-  height: auto;
-  padding: 2em;
-}
-
-article {
-  display: flex;
-}
 .porsche911 {
   margin: 1.1em;
   writing-mode: vertical-rl;
   font-size: 3em;
   font-family: "porsche";
   transition: 500ms ease;
-}
-
-.h2911 {
-  font-size: 3em;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: rgb(145, 144, 144);
-  border-radius: 2em;
 }
 
 .porsche911:hover {
@@ -101,38 +94,75 @@ article {
   transform: rotate(-90deg);
 }
 
-.subtext {
-  font-size: x-large;
+.start {
+  width: 30%;
+  height: auto;
+  padding: 2em;
 }
 
-ul a {
-  display: block;
-  transition: all 500ms ease;
+/* FOOTER CSS */
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(145, 144, 144);
+  color: rgb(0, 0, 0);
 }
 
-ul a:hover {
-  transform: translateY(-0.5em);
-  color: grey;
-  font-size: x-large;
+.porschefoot {
+  font-family: porsche;
 }
 
-.sub {
-  width: 100%;
+.lijst1 {
+  display: flex;
+  flex-direction: column;
 }
+
+/* 911 PAGINA CSS */
 
 .foto911 {
   display: flex;
   margin: auto;
 }
 
+.sub {
+  width: 100%;
+}
+
+/* 718 PAGINA CSS */
+
 .filmpjes718 {
   display: flex;
   justify-content: center;
 }
 
+/* 918 PAGINA CSS */
+
 .fotos918 {
   display: grid;
   justify-content: center;
+}
+
+/* TEXT OPMAAK CSS */
+
+.text {
+  font-size: xx-large;
+  font-style: italic;
+}
+
+.subtext {
+  font-size: x-large;
+}
+
+article {
+  display: flex;
+}
+
+.h2911 {
+  font-size: 3em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(145, 144, 144);
+  border-radius: 2em;
 }
 
 .center {
@@ -143,4 +173,8 @@ ul a:hover {
 
 .iframe {
   border: 0px;
+}
+
+header {
+  display: flex;
 }
